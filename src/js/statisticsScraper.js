@@ -11,8 +11,8 @@ function scrapeStatistics() {
 
             let rows = extractDataFromTableRows(doc);
             let countries = toDomain(rows);
-            
-            // TODO: populate new table with countries
+
+            createTable(countries);
 
     }).catch(function(err) {
         console.log('Failed to fetch page: ', err);
