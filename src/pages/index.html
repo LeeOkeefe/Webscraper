@@ -2,13 +2,16 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>Coronavirus statistics</title>
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+
     <script src="../js/tableGenerator.js"></script>
     <script src="../js/statisticsScraper.js"></script>
+
+    <link rel="stylesheet" href="../stylesheets/style.css" />
 </head>
 <body style="background: white;">
-<h1>Covid statistics</h1>
+<h2>Covid statistics</h2>
 <script>scrapeStatistics()</script>
 <table id="tableArea"></table>
 </body>
