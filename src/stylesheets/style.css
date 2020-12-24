@@ -1,3 +1,8 @@
+body.homepage {
+    background: rgb(63, 105, 251);
+    background: radial-gradient(circle, rgba(63, 105, 251, 0.6110819327731092) 35%, rgba(76, 155, 209, 1) 60%, rgba(70, 248, 252, 0.26934523809523814) 80%);
+}
+
 h2 {
     font-family: Tahoma, Geneva, sans-serif;
     text-align: center;
