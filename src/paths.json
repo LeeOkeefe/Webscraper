@@ -1,3 +1,10 @@
 {
-  "statisticsUrl": "https://www.worldometers.info/coronavirus/#countries"
+  "statisticsUrl": "https://www.worldometers.info/coronavirus/#countries",
+
+  "symptomsUrl": "https://www.nhs.uk/conditions/coronavirus-covid-19/symptoms/",
+  "testingAndTracingUrl": "https://www.nhs.uk/conditions/coronavirus-covid-19/testing-and-tracing/",
+  "selfIsolationAndTreatingUrl": "https://www.nhs.uk/conditions/coronavirus-covid-19/self-isolation-and-treatment/",
+  "higherRiskUrl": "https://www.nhs.uk/conditions/coronavirus-covid-19/people-at-higher-risk/",
+  "vaccinationUrl": "https://www.nhs.uk/conditions/coronavirus-covid-19/coronavirus-vaccination/",
+  "socialDistancingUrl": "https://www.nhs.uk/conditions/coronavirus-covid-19/social-distancing/"
 }
