@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NHS Guidance</title>
+
+    <link rel="stylesheet" href="../stylesheets/style.css" />
+    <link rel="stylesheet" href="../stylesheets/buttons.css" />
+    <link rel="stylesheet" href="../stylesheets/background.css" />
+
+    <script>let paths = require('../paths.json')</script>
+</head>
+<body class="information">
+
+<section style="display: flex; justify-content: space-around; height: 100%">
+    <section style="width: 40%; height: 75%">
+        <div onclick="location.href=paths.symptomsUrl" class="grid">
+            <div class="btn btn-one">
+                <span>Symptoms</span>
+            </div>
+        </div>
+        <div onclick="location.href=paths.testingAndTracingUrl" class="grid">
+            <div class="btn btn-one">
+                <span>Testing and tracing</span>
+            </div>
+        </div>
+        <div onclick="location.href=paths.selfIsolationAndTreatingUrl" class="grid">
+            <div class="btn btn-one">
+                <span>Self-isolation and treatment</span>
+            </div>
+        </div>
+    </section>
+    <section style="width: 40%; height: 75%">
+        <div onclick="location.href=paths.higherRiskUrl" class="grid">
+            <div class="btn btn-one">
+                <span>People at higher risk</span>
+            </div>
+        </div>
+        <div onclick="location.href=paths.vaccinationUrl" class="grid">
+            <div class="btn btn-one">
+                <span>Vaccination</span>
+            </div>
+        </div>
+        <div onclick="location.href=paths.socialDistancingUrl" class="grid">
+            <div class="btn btn-one">
+                <span>Social distancing</span>
+            </div>
+        </div>
+    </section>
+    <div style="position: fixed; bottom: 0%" onclick="location.href='index.html'" class="box-one">
+        <div class="btn btn-one">
+            <span>Return to homepage</span>
+        </div>
+    </div>
+</section>
+</body>
+</html>

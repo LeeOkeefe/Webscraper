@@ -20,6 +20,14 @@ div[class*=box] {
     align-items: center;
 }
 
+div[class*=grid] {
+    height: 33.33%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .btn {
     line-height: 50px;
     height: 50px;
