@@ -15,3 +15,9 @@ body.homepage {
         background-position: 0% 50%;
     }
 }
+
+body.information {
+    background: linear-gradient(-45deg, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
