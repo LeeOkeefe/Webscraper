@@ -4,6 +4,18 @@ body.homepage {
     animation: gradient 15s ease infinite;
 }
 
+body.information {
+    background: linear-gradient(-45deg, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+body.about {
+    background: linear-gradient(-45deg, #7c0808, #a31927, #008793, #46f8fc, #22cf90);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -14,10 +26,4 @@ body.homepage {
     100% {
         background-position: 0% 50%;
     }
-}
-
-body.information {
-    background: linear-gradient(-45deg, #051937, #004d7a, #008793, #00bf72, #a8eb12);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
 }
