@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
     <title>Coronavirus statistics</title>
@@ -8,10 +8,12 @@
     <script src="../js/tableGenerator.js"></script>
     <script src="../js/statisticsScraper.js"></script>
 
+    <link rel="stylesheet" href="../stylesheets/background.css" />
+    <link rel="stylesheet" href="../stylesheets/headers.css" />
     <link rel="stylesheet" href="../stylesheets/style.css" />
 </head>
-<body style="background: white;">
-<h2>Covid statistics</h2>
+<body class="statistics">
+<p class="glow">Covid statistics</p>
 <script>scrapeStatistics()</script>
 <table id="tableArea"></table>
 </body>
