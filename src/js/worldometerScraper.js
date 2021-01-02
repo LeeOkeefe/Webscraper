@@ -1,21 +1,21 @@
-function scrapeStatistics() {
-    let url = require('../paths.json').statisticsUrl;
+let worldometerScraper = function() {
+    this.url = require('../paths.json').statisticsUrl;
+}
 
-    fetch(url)
-        .then(function(response) {
-            return response.text();
-        })
-        .then(function(htmlString) {
-            let parser = new DOMParser();
-            let doc = parser.parseFromString(htmlString, "text/html");
+let getCountryStatistics = function(url) {
+    return new Promise((resolve, reject) => {
+        fetch(url)
+            .then(response => response.text())
+            .then(function(response) {
+                let parser = new DOMParser();
+                let doc = parser.parseFromString(response, "text/html");
 
-            let rows = extractDataFromTableRows(doc);
-            let countries = toDomain(rows);
-
-            createTable(countries);
-
-    }).catch(function(err) {
-        console.log('Failed to fetch page: ', err);
+                let rows = extractDataFromTableRows(doc);
+                resolve(toDomain(rows));
+            })
+            .catch(function(err) {
+                reject(console.log('Failed to fetch page: ', err))
+            })
     })
 }
 
