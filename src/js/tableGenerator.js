@@ -5,6 +5,7 @@ let createTable = function(data) {
     createTableHeaders(table);
     createTableData(table, data);
 
+    tableArea.innerHTML = null;
     tableArea.appendChild(table);
 }
 
