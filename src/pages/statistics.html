@@ -12,17 +12,13 @@
     <link rel="stylesheet" href="../stylesheets/background.css" />
     <link rel="stylesheet" href="../stylesheets/headers.css" />
     <link rel="stylesheet" href="../stylesheets/style.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body class="statistics">
+
 <p class="glow">Covid statistics</p>
-<button onclick="createSortedTable('Country')">Order by Country</button>
-<button onclick="createSortedTable('Deaths')">Order by Deaths</button>
-<button onclick="createSortedTable('Cases')">Order by Cases</button>
-<button onclick="createSortedTable('Recovered')">Order by Recovered</button>
-<button onclick="createSortedTable('Population')">Order by population</button>
-
 <script>createSortedTable('Rank', true)</script>
-
 <table id="tableArea"></table>
 </body>
 </html>

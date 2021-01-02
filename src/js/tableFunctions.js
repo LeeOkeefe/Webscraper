@@ -21,7 +21,7 @@ let sort = function(data, field, reverse = false) {
 }
 
 let sortCountries = function(data) {
-    return data.sort((a, b) => a.Country.trim().localeCompare(b.Country.trim()));
+    return data.sort((a, b) => a.Country.trim().localeCompare(b.Country.trim())).reverse();
 }
 
 let sortOther = function(data, field) {

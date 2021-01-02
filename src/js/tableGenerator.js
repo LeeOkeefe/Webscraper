@@ -1,3 +1,5 @@
+let reversedOrder = false;
+
 let createTable = function(data) {
     let tableArea = document.getElementById('tableArea'),
         table = document.createElement('table');
@@ -15,9 +17,18 @@ let createTableHeaders = function(table) {
     table.appendChild(thead);
 
     for (let i = 0; i < headers.length; i++) {
-        thead.appendChild(document.createElement('th'))
-            .appendChild(document.createTextNode(headers[i]));
+        let div = document.createElement('div');
+        let iconHtml = '<i class="fa fa-sort" style="float: right"></i>'
+
+        div.innerHTML = (headers[i] + iconHtml);
+        div.addEventListener('click', function(event) {
+            createSortedTable(headers[i], reversedOrder);
+        })
+
+        thead.appendChild(document.createElement('th')).appendChild(div)
     }
+
+    reversedOrder = !reversedOrder;
 }
 
 let createTableData = function(table, data) {
