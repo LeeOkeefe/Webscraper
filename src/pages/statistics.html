@@ -6,7 +6,8 @@
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
 
     <script src="../js/tableGenerator.js"></script>
-    <script src="../js/statisticsScraper.js"></script>
+    <script src="../js/worldometerScraper.js"></script>
+    <script src="../js/tableFunctions.js"></script>
 
     <link rel="stylesheet" href="../stylesheets/background.css" />
     <link rel="stylesheet" href="../stylesheets/headers.css" />
@@ -14,7 +15,14 @@
 </head>
 <body class="statistics">
 <p class="glow">Covid statistics</p>
-<script>scrapeStatistics()</script>
+<button onclick="createSortedTable('Country')">Order by Country</button>
+<button onclick="createSortedTable('Deaths')">Order by Deaths</button>
+<button onclick="createSortedTable('Cases')">Order by Cases</button>
+<button onclick="createSortedTable('Recovered')">Order by Recovered</button>
+<button onclick="createSortedTable('Population')">Order by population</button>
+
+<script>createSortedTable('Rank', true)</script>
+
 <table id="tableArea"></table>
 </body>
 </html>
