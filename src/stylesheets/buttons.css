@@ -201,6 +201,11 @@ div[class*=grid] {
     transform: scale(1,1);
 }
 
+.btn-return {
+    bottom: 0;
+    position: fixed;
+}
+
 .btn-group {
     padding: 20%;
 }

@@ -13,11 +13,6 @@ body.homepage {
     background-color: rgba(0, 255, 239, .1);
 }
 
-.about--return {
-    bottom: 0;
-    position: fixed;
-}
-
 h2 {
     font-family: Tahoma, Geneva, sans-serif;
     text-align: center;
@@ -93,3 +88,17 @@ table tfoot .links a{
     padding: 2px 8px;
     border-radius: 5px;
 }
+
+/* Grids */
+.grid--2x3 {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.grid--column {
+    width: 40%;
+    height: 75%;
+}
+
+
