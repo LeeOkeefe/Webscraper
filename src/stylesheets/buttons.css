@@ -42,13 +42,18 @@ div[class*=grid] {
 ========================
 */
 .btn-one {
+    margin: 5%;
+    background: none;
+    border:none;
     color: #FFF;
     transition: all 0.3s;
     position: relative;
 }
+
 .btn-one span {
     transition: all 0.3s;
 }
+
 .btn-one::before {
     content: '';
     position: absolute;
@@ -67,13 +72,16 @@ div[class*=grid] {
     border-bottom-color: rgba(255,255,255,0.5);
     transform: scale(0.1, 1);
 }
+
 .btn-one:hover span {
     letter-spacing: 2px;
 }
+
 .btn-one:hover::before {
     opacity: 1;
     transform: scale(1, 1);
 }
+
 .btn-one::after {
     content: '';
     position: absolute;
@@ -85,11 +93,11 @@ div[class*=grid] {
     transition: all 0.3s;
     background-color: rgba(255,255,255,0.1);
 }
+
 .btn-one:hover::after {
     opacity: 0;
     transform: scale(0.1, 1);
 }
-
 
 /* 
 ========================
@@ -101,6 +109,7 @@ div[class*=grid] {
     transition: all 0.5s;
     position: relative;
 }
+
 .btn-two span {
     z-index: 2;
     display: block;
@@ -108,6 +117,7 @@ div[class*=grid] {
     width: 100%;
     height: 100%;
 }
+
 .btn-two::before {
     content: '';
     position: absolute;
@@ -120,6 +130,7 @@ div[class*=grid] {
     border: 1px solid rgba(255,255,255,0.2);
     background-color: rgba(255,255,255,0.1);
 }
+
 .btn-two::after {
     content: '';
     position: absolute;
@@ -132,15 +143,16 @@ div[class*=grid] {
     border: 1px solid rgba(255,255,255,0.2);
     background-color: rgba(255,255,255,0.1);
 }
+
 .btn-two:hover::before {
     transform: rotate(-45deg);
     background-color: rgba(255,255,255,0);
 }
+
 .btn-two:hover::after {
     transform: rotate(45deg);
     background-color: rgba(255,255,255,0);
 }
-
 
 /* 
 ========================
@@ -152,6 +164,7 @@ div[class*=grid] {
     transition: all 0.5s;
     position: relative;
 }
+
 .btn-three::before {
     content: '';
     position: absolute;
@@ -163,10 +176,12 @@ div[class*=grid] {
     background-color: rgba(255,255,255,0.1);
     transition: all 0.3s;
 }
+
 .btn-three:hover::before {
     opacity: 0 ;
     transform: scale(0.5,0.5);
 }
+
 .btn-three::after {
     content: '';
     position: absolute;
@@ -180,7 +195,12 @@ div[class*=grid] {
     border: 1px solid rgba(255,255,255,0.5);
     transform: scale(1.2,1.2);
 }
+
 .btn-three:hover::after {
     opacity: 1;
     transform: scale(1,1);
+}
+
+.btn-group {
+    padding: 20%;
 }
