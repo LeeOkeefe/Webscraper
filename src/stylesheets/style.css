@@ -3,14 +3,19 @@ body.homepage {
     background: radial-gradient(circle, rgba(63, 105, 251, 0.6110819327731092) 35%, rgba(76, 155, 209, 1) 60%, rgba(70, 248, 252, 0.26934523809523814) 80%);
 }
 
-.centerDiv
-{
+.about--content {
     width: 60%;
     height:250px;
-    margin: 0 auto;
+    margin: 15% auto;
+    text-align: center;
     border-style: solid;
     border-width: thin;
     background-color: rgba(0, 255, 239, .1);
+}
+
+.about--return {
+    bottom: 0;
+    position: fixed;
 }
 
 h2 {
